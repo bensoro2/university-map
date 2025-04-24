@@ -1,0 +1,287 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 25px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Navigation */
+nav {
+  background: #1e3a8a;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+}
+
+nav a.active {
+  background-color: #3b82f6;
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin-bottom: 30px;
+  border-left: 5px solid #3b82f6;
+}
+
+/* Map Page */
+#map {
+  height: 500px;
+  width: 100%;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 4px solid #fff;
+}
+
+.map-info {
+  margin-top: 15px;
+}
+
+/* Profile Page */
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #3b82f6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.profile-info p {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+/* Learning Page */
+.skill-item {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 4px solid #3b82f6;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Tabs */
+.learning-tabs {
+  margin-top: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #f0f4ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.tab-btn.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Code Examples */
+.code-example {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  overflow-x: auto;
+}
+
+.code-example pre {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Creative Page */
+.creative-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.creative-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.creative-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.creative-text {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.feature-item {
+  background-color: #f0f4ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image img {
+    margin-bottom: 20px;
+  }
+
+  nav {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  nav a {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  #map {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
